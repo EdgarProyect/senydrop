@@ -1,0 +1,24 @@
+{
+  "name": "senydrop-hub",
+  "version": "1.0.0",
+  "description": "Senydrop hub - sincroniza catálogo a WooCommerce y MercadoLibre",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "sync": "node src/jobs/syncJobs.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6",
+    "woocommerce-rest-api": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
